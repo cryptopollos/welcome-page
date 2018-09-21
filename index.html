@@ -5,30 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <style>
         body,
+
         html {
             height: 100%;
+            overflow: hidden;
             margin: 0;
         }
 
         .bg {
             background-image: url("https://raw.githubusercontent.com/cryptopollos/welcome-page/master/bg.png");
             height: 100%;
-            width: 100%;
+            width: auto;
             background-repeat: no-repeat;
             background-size: cover;
         }
 
         .front {
-            position: relative;
+            position: absolute;
             display: block;
             left: 50%;
-            right: 50%;
             top: 50%;
-            max-height: 95%;
-            max-width: 95%;
+            max-height: 100%;
+            max-width: 100%;
             transform: translate(-50%, -50%);
-            margin-left: 5%;
-            margin-right: 5%;
         }
     </style>
 </head>
