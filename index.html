@@ -1,39 +1,152 @@
- 
-<!DOCTYPE html>
-<html>
+ <!DOCTYPE html>
+<html lang="en-US">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <style>
-        body,
-        html {
-            height: 100%;
-            overflow: hidden;
-            margin: 0;
-        }
-
-        .bg {
-            background-image: url("strip-upper.png"), url("eggs2.png"), url("strip-lower.png"), url("background.jpeg");
-            height: 100%;
-            width: auto;
-            background-position: left top, center, left bottom, center;
-            background-repeat: repeat-x, repeat-x, repeat-x, no-repeat;
-            background-size: auto, auto 40% , auto, cover;
-        }
-
-        .front {
-            position: absolute;
-            display: block;
-            left: 50%;
-            top: 50%;
-            max-height: 85%;
-            max-width: 85%;
-            transform: translate(-50%, -50%);
-        }
-    </style>
+    <title>Welcome to Crypto Pollos!</title>
+    <meta charset="UTF-8">
+    <meta lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
-<div class="bg">
-<img class="front" src="front.png">
-</div>
+    <!-- cover image -->
+    <div class="title-img">
+        <div class="mobile-leave-mail leave-mail">
+            <h3 class="cell-title w3-title">
+                Los pollos are waiting for you:
+                <br>join them!
+            </h3>
+            <img class="down-arrow" src="./img/angle-arrow-down.svg">
+        </div>
+    </div>
+
+    <!-- MAIN -->
+    <div class="page">
+
+        <!-- underlying containers -->
+        <div class="content-row w3-container">
+                        
+            <!-- 1) leave mail -->
+            <div id="leave-mail" class="leave-mail w3-container w3-center">
+                
+                <h3 class="desktop-leave-mail cell-title w3-title">
+                    Los pollos are waiting for you:
+                    <br>join them!
+                </h3>
+
+                <form id="setgs1" class="setgs">
+                    <input autocomplete="off" class="w3-input" type="email" name="email" placeholder="gus.fring@polloshermanos.com">
+                    <button class="w3-button w3-red" type="button" id="ss1">Subscribe <span class="chicken">🐔</span></button>
+                </form>
+
+                <h4>... And say hi in the <a href="https://discord.gg/NrMFrRh" target="_blank">CryptoPollos discord chat</a>!</h4>
+
+            </div>
+
+        </div>
+
+            <div id="bushes1" class="bushes w3-container">
+                <img src="img/striscia1-y.png">
+            </div>
+
+            <!-- 2) enter poultry fun -->
+            <div id="content1" class="content-cell w3-container">
+
+                <div class="content-wrapper">
+                    <div class="image-container w3-cell w3-mobile l4">
+                        <img class="w3-image" src="img/pollo.png">
+                    </div>                    
+                    <div class="w3-cell w3-mobile l8 w3-cell-middle description">
+                        <h3 class="cell-title w3-title">
+                            Enter the world of digital poultry fun!
+                        </h3>
+                        <p>
+                            CryptoPollos is an Ethereum-based game centred 
+                            around unique, collectible and improbable digital 
+                            Pollos.
+                        </p>
+                        <p>
+                            Enter a digital poultry farm. Choose the 
+                            juiciest pieces and mix them in our astounding Assembler 
+                            to create unique looking Pollos. 
+                        </p>
+                        <p>
+                            Time to adopt a fanciful and tasty friend, and don’t forget to feed it!
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="bushes2" class="bushes w3-container">
+                <img src="img/striscia1-b.png">
+            </div>
+
+            <!-- 3) choose the pieces -->
+            <div id="content2" class="content-cell w3-container">
+
+                <div class="content-wrapper">
+                    <div class="w3-cell w3-mobile l8 w3-cell-middle description">
+                        <h3 class="cell-title w3-title">
+                            Choose the finest pieces and show your very own Pollo to the world!
+                        </h3>
+                        <p>
+                            Fill your bucket with different ingredients as each 
+                            Assembler will require a unique set of ERC20 to let 
+                            the magic happen! Get out of the farm and show off 
+                            your improbable tasty friends, los Pollos (ERC721)!
+                        </p>
+                        <p>
+                            Useful? Maybe. Tasty? Very. Dangerous? Mmmh… Not yet.                            
+                        </p>
+                    </div>
+                    <div class="w3-cell w3-mobile l4">
+                        <img class="w3-image" src="img/secchiello.png">
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="bushes3" class="bushes w3-container">
+                <img src="img/striscia2-y.png">
+            </div>
+                
+            <div id="content-bottom" class="content-row w3-container">
+                <div class="content-wrapper">
+                    <h3 class="cell-title w3-title">Newsletter</h3>
+                    <p>
+                        Subscribe now to be the first to hear about 
+                        the coming launch<br> of our poultry farm 
+                        and exclusive early rewards.
+                    </p>
+                    <p>
+                        Los Pollos can’t wait to meet you!
+                    </p>    
+    
+                    <div id="leave-mail2" class="leave-mail w3-container w3-center">
+
+                        <form id="setgs2">
+                            <input autocomplete="off" class="w3-input" type="email" name="email" placeholder="gus.fring@polloshermanos.com">
+                            <button id="ss2" class="w3-button w3-red" type="button">Subscribe <span class="chicken">🐔</span></button>
+                        </form>
+                    </div>
+                    <small>P.S.: Come and say hi in the <a href="https://discord.gg/NrMFrRh" target="_blank">CryptoPollos discord chat</a>!</small>
+                </div>
+            </div>
+
+        <!-- FOOTER -->
+        <footer id="footer" class="w3-container"></footer>
+        <!-- /FOOTER -->
+
+    </div>
+    <!-- /MAIN -->
+
+    <script>
+    (function() {
+        window.scrollTo(0,1);
+    })
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>    
+    <script src="./cr-lp.js"></script>
 </body>
 </html>

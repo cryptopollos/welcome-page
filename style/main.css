@@ -1,0 +1,326 @@
+@font-face {
+    font-family: "Rutan";
+    src: url("font/rutan/rutan-webfont.woff");
+}
+
+@font-face {
+    font-family: "Obelix Pro";
+    src: url("font/obelix/obelixpro-cyr-webfont.woff");
+}
+
+html {
+    background-image: url("../img/pattern-uova.png");
+    height: 100%
+}
+
+body {
+    height: 100%;
+}
+
+html, body, .page {
+    background-color: #b08282;
+    font-family: "Rutan";
+}
+
+input, button {
+    outline: none;
+    position: relative;
+    z-index: 2;
+}
+
+.page {
+    position: relative;
+    background-color: #b08282;
+}
+
+.title-img {
+    background-image: url("../img/title-mobile.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes bounce {
+    from {top: -5px;}
+    to {top: 10px;}
+}
+
+.leave-mail {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+}
+
+.mobile-leave-mail {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    padding-bottom: 20px;
+    max-width: 80%;
+}
+
+.mobile-leave-mail .cell-title {
+    margin-bottom: 3%;
+    font-size: 30px;
+    font-size: 8vw;
+    line-height: 1.2;
+}
+
+.mobile-leave-mail .down-arrow {
+    position: relative;
+    top: 0;
+    width: 10%;
+    height: 10%;
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    z-index: 1;
+}
+
+.desktop-leave-mail {
+    display: none;
+}
+
+@media only screen and (orientation: landscape), 
+only screen and (min-width: 600px) {
+    .title-img {
+        background-position: top center;
+        background-image: url("../img/title-full.png");
+        height: 100%;   
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    .title-img {
+        height: 100%;
+    }
+
+    .mobile-leave-mail {
+        display: none;
+    }
+
+    .desktop-leave-mail {
+        display: block;
+    }
+}
+
+#content {
+    text-align: center;
+}
+
+.leave-mail input {
+    display: block;
+    width: 100%;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.leave-mail button {
+    margin-top: 1rem;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-variant: small-caps;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+@media only screen and (min-width: 640px) {
+    .leave-mail input {
+        display: inline-block;
+        width: 70%;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .leave-mail button {
+        margin-top: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        left: -5px;
+    }
+}
+
+
+.leave-mail .chicken {
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    display: inline-block;
+}
+
+.leave-mail button:hover .chicken {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+}
+
+.leave-mail h4 {
+    margin-top: 50px;
+    color: #f5f1ef;
+}
+
+.leave-mail .warning {
+    padding: 10px 20px;;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+#content1, #content-bottom, #bushes2 {
+    background-color: #f8ddce;
+}
+
+.content-cell {
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+    padding: 80px 50px;
+}
+
+.content-wrapper {
+    margin: auto;
+    max-width: 800px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .content-wrapper {
+        max-width: 1000px;
+    }
+}
+
+.cell-title {
+    /* font-family: "Rutan"; */
+    font-weight: 700;
+    font-size: 30px;
+    /* letter-spacing: 0.5px; */
+    font-variant: small-caps;
+    line-height: 1;
+    margin-bottom: 30px;
+    color: #ffae00;
+    position: relative;
+    z-index: 2;
+    -webkit-transform: skew(-12deg, 0) translateZ(1px);
+            transform: skew(-12deg, 0) translateZ(1px);
+}
+
+.cell-title span {
+    display: block;
+}
+
+.page p {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+}
+
+.bushes {
+    padding: 0;
+    position: relative;
+}
+
+.bushes img {
+    width: 100%;
+    position: relative;
+}
+
+#bushes1, #bushes3 {
+    top: 5px;
+}
+
+#bushes2 {
+    top: -5px;
+}
+
+#content1 p, #content-bottom p {
+    color: #5f4545;
+}
+#content2 p {
+    color: #f5f1ef;
+}
+
+#content-bottom {
+    text-align: center;
+}
+
+#leave-mail2 {
+    margin: 50px auto;
+} 
+
+.content-row {
+    padding: 80px 50px;
+}
+
+.content-row p {
+     max-width: 1000px;
+}
+
+.border {
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    top: -23px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    -webkit-transform: skewY(6deg) translateZ(1px);
+            transform: skewY(6deg) translateZ(1px);;
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    z-index: 1;
+}
+
+.image-container {
+    position: relative;
+    z-index: 2;
+}
+
+#footer {
+    height: 200px;
+    background-image: url("../img/pattern-uova.png");
+    background-size: cover;
+}
+
+.success {
+    z-index: 99999;
+    /* Safari hack to make z-index work */
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.success .w3-modal-content {
+    border-radius: 5px;
+    padding: 50px;
+}
+
+.success .w3-modal-content h1 {
+    z-index: inherit;
+}
+
+.success .close {
+    border-radius: 50px;
+    top: -10px;
+    right: -10px;
+    padding: 5px 13px;
+    background-color: white;
+    border: solid 5px;
+    border-color: #f44336;
+    color: #f44336;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s
+}
+
+.success .close:hover {
+    background-color: #f44336 !important;
+    color: white !important;
+}
